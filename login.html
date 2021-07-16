@@ -51,11 +51,24 @@
       </div>
       <div>
         <div class="txtboxes">
-          Username:<input type="text" class="field" id="name" placeholder="enter username"/><br />
-          Password:<input type="password" class="field" id="password" placeholder="enter password"/><br />
-          <button type="submit" class="btn">SUBMIT</button> <br />
+          <form action="/action_page.php">
+            
+            <label for="username">Username:</label>
+            <input type="text"  class="field" id="name" name="username"  placeholder="enter username" required> <br>
+            
+            <label for="password">password:</label>
+            <input type="password"  class="field" id="name" name="password"  placeholder="enter password" required> <br>
+
+            <button type="submit" onclick="loginbtn()" class="btn">SUBMIT</button> <br />
+          </form>
         </div>
       </div>
     </div>
   </body>
+  <script>
+    function loginbtn()
+    {
+      alert("You Have successfully loged in ")
+    }
+  </script>
 </html>
