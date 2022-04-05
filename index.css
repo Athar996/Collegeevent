@@ -8,6 +8,7 @@
     background-image: url(event2bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width:100vh;
   }
 
   .namelogo {
